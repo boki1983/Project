@@ -1,0 +1,1 @@
+This project use poi and javacsv to parse stock csv file which is provided by twse.
