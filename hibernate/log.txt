@@ -1,0 +1,676 @@
+Hibernate: Running hbm2ddl schema export
+Hibernate: import file not found: /import.sql
+Hibernate: exporting generated schema to database
+Hibernate: alter table tb_cat drop foreign key FKCB83D685DDF909A1
+Hibernate: Unsuccessful: alter table tb_cat drop foreign key FKCB83D685DDF909A1
+Hibernate: Table 'hibernate.tb_cat' doesn't exist
+Hibernate: drop table if exists tb_cat
+Hibernate: create table tb_cat (id integer not null auto_increment, name varchar(255), description varchar(255), createDate datetime, mother_id integer, primary key (id))
+Hibernate: alter table tb_cat add index FKCB83D685DDF909A1 (mother_id), add constraint FKCB83D685DDF909A1 foreign key (mother_id) references tb_cat (id)
+Hibernate: schema export complete
+Hibernate: Running hbm2ddl schema export
+Hibernate: import file not found: /import.sql
+Hibernate: exporting generated schema to database
+Hibernate: alter table tb_cat drop foreign key FKCB83D685DDF909A1
+Hibernate: drop table if exists tb_cat
+Hibernate: create table tb_cat (id integer not null auto_increment, name varchar(255), description varchar(255), createDate datetime, mother_id integer, primary key (id))
+Hibernate: alter table tb_cat add index FKCB83D685DDF909A1 (mother_id), add constraint FKCB83D685DDF909A1 foreign key (mother_id) references tb_cat (id)
+Hibernate: schema export complete
+Hibernate: Running hbm2ddl schema export
+Hibernate: import file not found: /import.sql
+Hibernate: exporting generated schema to database
+Hibernate: alter table tb_cat drop foreign key FKCB83D685DDF909A1
+Hibernate: alter table tb_email drop foreign key FKFA09B28BF5F6DD76
+Hibernate: Unsuccessful: alter table tb_email drop foreign key FKFA09B28BF5F6DD76
+Hibernate: Table 'hibernate.tb_email' doesn't exist
+Hibernate: drop table if exists tb_cat
+Hibernate: drop table if exists tb_email
+Hibernate: drop table if exists tb_person2
+Hibernate: create table tb_cat (id integer not null auto_increment, name varchar(255), description varchar(255), createDate datetime, mother_id integer, primary key (id))
+Hibernate: create table tb_email (id integer not null auto_increment, email varchar(255), person_id integer, primary key (id))
+Hibernate: create table tb_person2 (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: alter table tb_cat add index FKCB83D685DDF909A1 (mother_id), add constraint FKCB83D685DDF909A1 foreign key (mother_id) references tb_cat (id)
+Hibernate: alter table tb_email add index FKFA09B28BF5F6DD76 (person_id), add constraint FKFA09B28BF5F6DD76 foreign key (person_id) references tb_person2 (id)
+Hibernate: schema export complete
+Hibernate: Running hbm2ddl schema export
+Hibernate: import file not found: /import.sql
+Hibernate: exporting generated schema to database
+Hibernate: alter table tb_cat drop foreign key FKCB83D685DDF909A1
+Hibernate: alter table tb_email drop foreign key FKFA09B28BF5F6DD76
+Hibernate: drop table if exists tb_cat
+Hibernate: drop table if exists tb_email
+Hibernate: drop table if exists tb_person2
+Hibernate: create table tb_cat (id integer not null auto_increment, name varchar(255), description varchar(255), createDate datetime, mother_id integer, primary key (id))
+Hibernate: create table tb_email (id integer not null auto_increment, email varchar(255), person_id integer, primary key (id))
+Hibernate: create table tb_person2 (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: alter table tb_cat add index FKCB83D685DDF909A1 (mother_id), add constraint FKCB83D685DDF909A1 foreign key (mother_id) references tb_cat (id)
+Hibernate: alter table tb_email add index FKFA09B28BF5F6DD76 (person_id), add constraint FKFA09B28BF5F6DD76 foreign key (person_id) references tb_person2 (id)
+Hibernate: schema export complete
+Hibernate: Running hbm2ddl schema export
+Hibernate: import file not found: /import.sql
+Hibernate: exporting generated schema to database
+Hibernate: alter table tb_article drop foreign key FKD46234251F08B846
+Hibernate: Unsuccessful: alter table tb_article drop foreign key FKD46234251F08B846
+Hibernate: Table 'hibernate.tb_article' doesn't exist
+Hibernate: alter table tb_cat drop foreign key FKCB83D685DDF909A1
+Hibernate: alter table tb_email drop foreign key FKFA09B28BF5F6DD76
+Hibernate: drop table if exists tb_article
+Hibernate: drop table if exists tb_cat
+Hibernate: drop table if exists tb_email
+Hibernate: drop table if exists tb_person2
+Hibernate: drop table if exists tb_type
+Hibernate: create table tb_article (id integer not null auto_increment, name varchar(255), content longtext, type_id integer, primary key (id))
+Hibernate: create table tb_cat (id integer not null auto_increment, name varchar(255), description varchar(255), createDate datetime, mother_id integer, primary key (id))
+Hibernate: create table tb_email (id integer not null auto_increment, email varchar(255), person_id integer, primary key (id))
+Hibernate: create table tb_person2 (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_type (id integer not null auto_increment, name varchar(255) unique, primary key (id))
+Hibernate: alter table tb_article add index FKD46234251F08B846 (type_id), add constraint FKD46234251F08B846 foreign key (type_id) references tb_type (id)
+Hibernate: alter table tb_cat add index FKCB83D685DDF909A1 (mother_id), add constraint FKCB83D685DDF909A1 foreign key (mother_id) references tb_cat (id)
+Hibernate: alter table tb_email add index FKFA09B28BF5F6DD76 (person_id), add constraint FKFA09B28BF5F6DD76 foreign key (person_id) references tb_person2 (id)
+Hibernate: schema export complete
+Hibernate: Running hbm2ddl schema export
+Hibernate: import file not found: /import.sql
+Hibernate: exporting generated schema to database
+Hibernate: alter table tb_article drop foreign key FKD46234251F08B846
+Hibernate: alter table tb_cat drop foreign key FKCB83D685DDF909A1
+Hibernate: alter table tb_email drop foreign key FKFA09B28BF5F6DD76
+Hibernate: alter table tb_student drop foreign key FK9007E96A12A9304E
+Hibernate: Unsuccessful: alter table tb_student drop foreign key FK9007E96A12A9304E
+Hibernate: Table 'hibernate.tb_student' doesn't exist
+Hibernate: drop table if exists tb_article
+Hibernate: drop table if exists tb_cat
+Hibernate: drop table if exists tb_class
+Hibernate: drop table if exists tb_email
+Hibernate: drop table if exists tb_person2
+Hibernate: drop table if exists tb_student
+Hibernate: drop table if exists tb_type
+Hibernate: create table tb_article (id integer not null auto_increment, name varchar(255), content longtext, type_id integer, primary key (id))
+Hibernate: create table tb_cat (id integer not null auto_increment, name varchar(255), description varchar(255), createDate datetime, mother_id integer, primary key (id))
+Hibernate: create table tb_class (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_email (id integer not null auto_increment, email varchar(255), person_id integer, primary key (id))
+Hibernate: create table tb_person2 (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_student (id integer not null auto_increment, name varchar(255), sex varchar(255), class_id integer, primary key (id))
+Hibernate: create table tb_type (id integer not null auto_increment, name varchar(255) unique, primary key (id))
+Hibernate: alter table tb_article add index FKD46234251F08B846 (type_id), add constraint FKD46234251F08B846 foreign key (type_id) references tb_type (id)
+Hibernate: alter table tb_cat add index FKCB83D685DDF909A1 (mother_id), add constraint FKCB83D685DDF909A1 foreign key (mother_id) references tb_cat (id)
+Hibernate: alter table tb_email add index FKFA09B28BF5F6DD76 (person_id), add constraint FKFA09B28BF5F6DD76 foreign key (person_id) references tb_person2 (id)
+Hibernate: alter table tb_student add index FK9007E96A12A9304E (class_id), add constraint FK9007E96A12A9304E foreign key (class_id) references tb_class (id)
+Hibernate: schema export complete
+Hibernate: Running hbm2ddl schema export
+Hibernate: import file not found: /import.sql
+Hibernate: exporting generated schema to database
+Hibernate: alter table tb_article drop foreign key FKD46234251F08B846
+Hibernate: alter table tb_cat drop foreign key FKCB83D685DDF909A1
+Hibernate: alter table tb_email drop foreign key FKFA09B28BF5F6DD76
+Hibernate: alter table tb_student drop foreign key FK9007E96A12A9304E
+Hibernate: drop table if exists tb_article
+Hibernate: drop table if exists tb_cat
+Hibernate: drop table if exists tb_class
+Hibernate: drop table if exists tb_email
+Hibernate: drop table if exists tb_person2
+Hibernate: drop table if exists tb_student
+Hibernate: drop table if exists tb_type
+Hibernate: create table tb_article (id integer not null auto_increment, name varchar(255), content longtext, type_id integer, primary key (id))
+Hibernate: create table tb_cat (id integer not null auto_increment, name varchar(255), description varchar(255), createDate datetime, mother_id integer, primary key (id))
+Hibernate: create table tb_class (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_email (id integer not null auto_increment, email varchar(255), person_id integer, primary key (id))
+Hibernate: create table tb_person2 (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_student (id integer not null auto_increment, name varchar(255), sex varchar(255), class_id integer, primary key (id))
+Hibernate: create table tb_type (id integer not null auto_increment, name varchar(255) unique, primary key (id))
+Hibernate: alter table tb_article add index FKD46234251F08B846 (type_id), add constraint FKD46234251F08B846 foreign key (type_id) references tb_type (id)
+Hibernate: alter table tb_cat add index FKCB83D685DDF909A1 (mother_id), add constraint FKCB83D685DDF909A1 foreign key (mother_id) references tb_cat (id)
+Hibernate: alter table tb_email add index FKFA09B28BF5F6DD76 (person_id), add constraint FKFA09B28BF5F6DD76 foreign key (person_id) references tb_person2 (id)
+Hibernate: alter table tb_student add index FK9007E96A12A9304E (class_id), add constraint FK9007E96A12A9304E foreign key (class_id) references tb_class (id)
+Hibernate: schema export complete
+Hibernate: Running hbm2ddl schema export
+Hibernate: import file not found: /import.sql
+Hibernate: exporting generated schema to database
+Hibernate: alter table tb_article drop foreign key FKD46234251F08B846
+Hibernate: alter table tb_cat drop foreign key FKCB83D685DDF909A1
+Hibernate: alter table tb_email drop foreign key FKFA09B28BF5F6DD76
+Hibernate: alter table tb_student drop foreign key FK9007E96A12A9304E
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D63A8E7686
+Hibernate: Unsuccessful: alter table tb_tag_post drop foreign key FKD39AC0D63A8E7686
+Hibernate: Table 'hibernate.tb_tag_post' doesn't exist
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D6CE1D812E
+Hibernate: Unsuccessful: alter table tb_tag_post drop foreign key FKD39AC0D6CE1D812E
+Hibernate: Table 'hibernate.tb_tag_post' doesn't exist
+Hibernate: drop table if exists tb_article
+Hibernate: drop table if exists tb_cat
+Hibernate: drop table if exists tb_class
+Hibernate: drop table if exists tb_email
+Hibernate: drop table if exists tb_person2
+Hibernate: drop table if exists tb_post
+Hibernate: drop table if exists tb_student
+Hibernate: drop table if exists tb_tag
+Hibernate: drop table if exists tb_tag_post
+Hibernate: drop table if exists tb_type
+Hibernate: create table tb_article (id integer not null auto_increment, name varchar(255), content longtext, type_id integer, primary key (id))
+Hibernate: create table tb_cat (id integer not null auto_increment, name varchar(255), description varchar(255), createDate datetime, mother_id integer, primary key (id))
+Hibernate: create table tb_class (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_email (id integer not null auto_increment, email varchar(255), person_id integer, primary key (id))
+Hibernate: create table tb_person2 (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_post (id integer not null auto_increment, title varchar(255), content text, primary key (id))
+Hibernate: create table tb_student (id integer not null auto_increment, name varchar(255), sex varchar(255), class_id integer, primary key (id))
+Hibernate: create table tb_tag (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_tag_post (post_id integer not null, tag_id integer not null, primary key (post_id, tag_id))
+Hibernate: create table tb_type (id integer not null auto_increment, name varchar(255) unique, primary key (id))
+Hibernate: alter table tb_article add index FKD46234251F08B846 (type_id), add constraint FKD46234251F08B846 foreign key (type_id) references tb_type (id)
+Hibernate: alter table tb_cat add index FKCB83D685DDF909A1 (mother_id), add constraint FKCB83D685DDF909A1 foreign key (mother_id) references tb_cat (id)
+Hibernate: alter table tb_email add index FKFA09B28BF5F6DD76 (person_id), add constraint FKFA09B28BF5F6DD76 foreign key (person_id) references tb_person2 (id)
+Hibernate: alter table tb_student add index FK9007E96A12A9304E (class_id), add constraint FK9007E96A12A9304E foreign key (class_id) references tb_class (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D63A8E7686 (post_id), add constraint FKD39AC0D63A8E7686 foreign key (post_id) references tb_post (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D6CE1D812E (tag_id), add constraint FKD39AC0D6CE1D812E foreign key (tag_id) references tb_tag (id)
+Hibernate: schema export complete
+Hibernate: Running hbm2ddl schema export
+Hibernate: import file not found: /import.sql
+Hibernate: exporting generated schema to database
+Hibernate: alter table tb_article drop foreign key FKD46234251F08B846
+Hibernate: alter table tb_cat drop foreign key FKCB83D685DDF909A1
+Hibernate: alter table tb_email drop foreign key FKFA09B28BF5F6DD76
+Hibernate: alter table tb_student drop foreign key FK9007E96A12A9304E
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D63A8E7686
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D6CE1D812E
+Hibernate: drop table if exists tb_article
+Hibernate: drop table if exists tb_cat
+Hibernate: drop table if exists tb_class
+Hibernate: drop table if exists tb_email
+Hibernate: drop table if exists tb_person2
+Hibernate: drop table if exists tb_post
+Hibernate: drop table if exists tb_student
+Hibernate: drop table if exists tb_tag
+Hibernate: drop table if exists tb_tag_post
+Hibernate: drop table if exists tb_type
+Hibernate: create table tb_article (id integer not null auto_increment, name varchar(255), content longtext, type_id integer, primary key (id))
+Hibernate: create table tb_cat (id integer not null auto_increment, name varchar(255), description varchar(255), createDate datetime, mother_id integer, primary key (id))
+Hibernate: create table tb_class (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_email (id integer not null auto_increment, email varchar(255), person_id integer, primary key (id))
+Hibernate: create table tb_person2 (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_post (id integer not null auto_increment, title varchar(255), content text, primary key (id))
+Hibernate: create table tb_student (id integer not null auto_increment, name varchar(255), sex varchar(255), class_id integer, primary key (id))
+Hibernate: create table tb_tag (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_tag_post (post_id integer not null, tag_id integer not null, primary key (post_id, tag_id))
+Hibernate: create table tb_type (id integer not null auto_increment, name varchar(255) unique, primary key (id))
+Hibernate: alter table tb_article add index FKD46234251F08B846 (type_id), add constraint FKD46234251F08B846 foreign key (type_id) references tb_type (id)
+Hibernate: alter table tb_cat add index FKCB83D685DDF909A1 (mother_id), add constraint FKCB83D685DDF909A1 foreign key (mother_id) references tb_cat (id)
+Hibernate: alter table tb_email add index FKFA09B28BF5F6DD76 (person_id), add constraint FKFA09B28BF5F6DD76 foreign key (person_id) references tb_person2 (id)
+Hibernate: alter table tb_student add index FK9007E96A12A9304E (class_id), add constraint FK9007E96A12A9304E foreign key (class_id) references tb_class (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D63A8E7686 (post_id), add constraint FKD39AC0D63A8E7686 foreign key (post_id) references tb_post (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D6CE1D812E (tag_id), add constraint FKD39AC0D6CE1D812E foreign key (tag_id) references tb_tag (id)
+Hibernate: schema export complete
+Hibernate: Running hbm2ddl schema export
+Hibernate: import file not found: /import.sql
+Hibernate: exporting generated schema to database
+Hibernate: alter table tb_article drop foreign key FKD46234251F08B846
+Hibernate: alter table tb_cat drop foreign key FKCB83D685DDF909A1
+Hibernate: alter table tb_email drop foreign key FKFA09B28BF5F6DD76
+Hibernate: alter table tb_sailor drop foreign key FK5E6B0C85CCC1C106
+Hibernate: Unsuccessful: alter table tb_sailor drop foreign key FK5E6B0C85CCC1C106
+Hibernate: Table 'hibernate.tb_sailor' doesn't exist
+Hibernate: alter table tb_ship drop foreign key FKA4FE596D1A6E4F76
+Hibernate: Unsuccessful: alter table tb_ship drop foreign key FKA4FE596D1A6E4F76
+Hibernate: Table 'hibernate.tb_ship' doesn't exist
+Hibernate: alter table tb_student drop foreign key FK9007E96A12A9304E
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D63A8E7686
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D6CE1D812E
+Hibernate: drop table if exists tb_article
+Hibernate: drop table if exists tb_cat
+Hibernate: drop table if exists tb_class
+Hibernate: drop table if exists tb_email
+Hibernate: drop table if exists tb_person2
+Hibernate: drop table if exists tb_post
+Hibernate: drop table if exists tb_sailor
+Hibernate: drop table if exists tb_ship
+Hibernate: drop table if exists tb_student
+Hibernate: drop table if exists tb_tag
+Hibernate: drop table if exists tb_tag_post
+Hibernate: drop table if exists tb_type
+Hibernate: create table tb_article (id integer not null auto_increment, name varchar(255), content longtext, type_id integer, primary key (id))
+Hibernate: create table tb_cat (id integer not null auto_increment, name varchar(255), description varchar(255), createDate datetime, mother_id integer, primary key (id))
+Hibernate: create table tb_class (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_email (id integer not null auto_increment, email varchar(255), person_id integer, primary key (id))
+Hibernate: create table tb_person2 (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_post (id integer not null auto_increment, title varchar(255), content text, primary key (id))
+Hibernate: create table tb_sailor (id integer not null auto_increment, name varchar(255), ship_id integer, primary key (id))
+Hibernate: create table tb_ship (id integer not null auto_increment, name varchar(255), captain_id integer unique, primary key (id))
+Hibernate: create table tb_student (id integer not null auto_increment, name varchar(255), sex varchar(255), class_id integer, primary key (id))
+Hibernate: create table tb_tag (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_tag_post (post_id integer not null, tag_id integer not null, primary key (post_id, tag_id))
+Hibernate: create table tb_type (id integer not null auto_increment, name varchar(255) unique, primary key (id))
+Hibernate: alter table tb_article add index FKD46234251F08B846 (type_id), add constraint FKD46234251F08B846 foreign key (type_id) references tb_type (id)
+Hibernate: alter table tb_cat add index FKCB83D685DDF909A1 (mother_id), add constraint FKCB83D685DDF909A1 foreign key (mother_id) references tb_cat (id)
+Hibernate: alter table tb_email add index FKFA09B28BF5F6DD76 (person_id), add constraint FKFA09B28BF5F6DD76 foreign key (person_id) references tb_person2 (id)
+Hibernate: alter table tb_sailor add index FK5E6B0C85CCC1C106 (ship_id), add constraint FK5E6B0C85CCC1C106 foreign key (ship_id) references tb_ship (id)
+Hibernate: alter table tb_ship add index FKA4FE596D1A6E4F76 (captain_id), add constraint FKA4FE596D1A6E4F76 foreign key (captain_id) references tb_sailor (id)
+Hibernate: alter table tb_student add index FK9007E96A12A9304E (class_id), add constraint FK9007E96A12A9304E foreign key (class_id) references tb_class (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D63A8E7686 (post_id), add constraint FKD39AC0D63A8E7686 foreign key (post_id) references tb_post (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D6CE1D812E (tag_id), add constraint FKD39AC0D6CE1D812E foreign key (tag_id) references tb_tag (id)
+Hibernate: schema export complete
+Hibernate: Running hbm2ddl schema export
+Hibernate: import file not found: /import.sql
+Hibernate: exporting generated schema to database
+Hibernate: alter table tb_article drop foreign key FKD46234251F08B846
+Hibernate: alter table tb_cat drop foreign key FKCB83D685DDF909A1
+Hibernate: alter table tb_email drop foreign key FKFA09B28BF5F6DD76
+Hibernate: alter table tb_sailor drop foreign key FK5E6B0C85CCC1C106
+Hibernate: alter table tb_ship drop foreign key FKA4FE596D1A6E4F76
+Hibernate: alter table tb_student drop foreign key FK9007E96A12A9304E
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D63A8E7686
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D6CE1D812E
+Hibernate: drop table if exists tb_article
+Hibernate: drop table if exists tb_cat
+Hibernate: drop table if exists tb_class
+Hibernate: drop table if exists tb_email
+Hibernate: drop table if exists tb_person2
+Hibernate: drop table if exists tb_post
+Hibernate: drop table if exists tb_sailor
+Hibernate: drop table if exists tb_ship
+Hibernate: drop table if exists tb_student
+Hibernate: drop table if exists tb_tag
+Hibernate: drop table if exists tb_tag_post
+Hibernate: drop table if exists tb_type
+Hibernate: create table tb_article (id integer not null auto_increment, name varchar(255), content longtext, type_id integer, primary key (id))
+Hibernate: create table tb_cat (id integer not null auto_increment, name varchar(255), description varchar(255), createDate datetime, mother_id integer, primary key (id))
+Hibernate: create table tb_class (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_email (id integer not null auto_increment, email varchar(255), person_id integer, primary key (id))
+Hibernate: create table tb_person2 (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_post (id integer not null auto_increment, title varchar(255), content text, primary key (id))
+Hibernate: create table tb_sailor (id integer not null auto_increment, name varchar(255), ship_id integer, primary key (id))
+Hibernate: create table tb_ship (id integer not null auto_increment, name varchar(255), captain_id integer unique, primary key (id))
+Hibernate: create table tb_student (id integer not null auto_increment, name varchar(255), sex varchar(255), class_id integer, primary key (id))
+Hibernate: create table tb_tag (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_tag_post (post_id integer not null, tag_id integer not null, primary key (post_id, tag_id))
+Hibernate: create table tb_type (id integer not null auto_increment, name varchar(255) unique, primary key (id))
+Hibernate: alter table tb_article add index FKD46234251F08B846 (type_id), add constraint FKD46234251F08B846 foreign key (type_id) references tb_type (id)
+Hibernate: alter table tb_cat add index FKCB83D685DDF909A1 (mother_id), add constraint FKCB83D685DDF909A1 foreign key (mother_id) references tb_cat (id)
+Hibernate: alter table tb_email add index FKFA09B28BF5F6DD76 (person_id), add constraint FKFA09B28BF5F6DD76 foreign key (person_id) references tb_person2 (id)
+Hibernate: alter table tb_sailor add index FK5E6B0C85CCC1C106 (ship_id), add constraint FK5E6B0C85CCC1C106 foreign key (ship_id) references tb_ship (id)
+Hibernate: alter table tb_ship add index FKA4FE596D1A6E4F76 (captain_id), add constraint FKA4FE596D1A6E4F76 foreign key (captain_id) references tb_sailor (id)
+Hibernate: alter table tb_student add index FK9007E96A12A9304E (class_id), add constraint FK9007E96A12A9304E foreign key (class_id) references tb_class (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D63A8E7686 (post_id), add constraint FKD39AC0D63A8E7686 foreign key (post_id) references tb_post (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D6CE1D812E (tag_id), add constraint FKD39AC0D6CE1D812E foreign key (tag_id) references tb_tag (id)
+Hibernate: schema export complete
+Hibernate: Running hbm2ddl schema export
+Hibernate: import file not found: /import.sql
+Hibernate: exporting generated schema to database
+Hibernate: alter table tb_article drop foreign key FKD46234251F08B846
+Hibernate: alter table tb_cat drop foreign key FKCB83D685DDF909A1
+Hibernate: alter table tb_email drop foreign key FKFA09B28BF5F6DD76
+Hibernate: alter table tb_sailor drop foreign key FK5E6B0C85CCC1C106
+Hibernate: alter table tb_ship drop foreign key FKA4FE596D1A6E4F76
+Hibernate: alter table tb_student drop foreign key FK9007E96A12A9304E
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D63A8E7686
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D6CE1D812E
+Hibernate: drop table if exists tb_address
+Hibernate: drop table if exists tb_article
+Hibernate: drop table if exists tb_cat
+Hibernate: drop table if exists tb_class
+Hibernate: drop table if exists tb_customer
+Hibernate: drop table if exists tb_email
+Hibernate: drop table if exists tb_person2
+Hibernate: drop table if exists tb_post
+Hibernate: drop table if exists tb_sailor
+Hibernate: drop table if exists tb_ship
+Hibernate: drop table if exists tb_student
+Hibernate: drop table if exists tb_tag
+Hibernate: drop table if exists tb_tag_post
+Hibernate: drop table if exists tb_type
+Hibernate: create table tb_address (id integer not null, address varchar(255), zip varchar(255), telephone varchar(255), primary key (id))
+Hibernate: create table tb_article (id integer not null auto_increment, name varchar(255), content longtext, type_id integer, primary key (id))
+Hibernate: create table tb_cat (id integer not null auto_increment, name varchar(255), description varchar(255), createDate datetime, mother_id integer, primary key (id))
+Hibernate: create table tb_class (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_customer (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_email (id integer not null auto_increment, email varchar(255), person_id integer, primary key (id))
+Hibernate: create table tb_person2 (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_post (id integer not null auto_increment, title varchar(255), content text, primary key (id))
+Hibernate: create table tb_sailor (id integer not null auto_increment, name varchar(255), ship_id integer, primary key (id))
+Hibernate: create table tb_ship (id integer not null auto_increment, name varchar(255), captain_id integer unique, primary key (id))
+Hibernate: create table tb_student (id integer not null auto_increment, name varchar(255), sex varchar(255), class_id integer, primary key (id))
+Hibernate: create table tb_tag (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_tag_post (post_id integer not null, tag_id integer not null, primary key (post_id, tag_id))
+Hibernate: create table tb_type (id integer not null auto_increment, name varchar(255) unique, primary key (id))
+Hibernate: alter table tb_article add index FKD46234251F08B846 (type_id), add constraint FKD46234251F08B846 foreign key (type_id) references tb_type (id)
+Hibernate: alter table tb_cat add index FKCB83D685DDF909A1 (mother_id), add constraint FKCB83D685DDF909A1 foreign key (mother_id) references tb_cat (id)
+Hibernate: alter table tb_email add index FKFA09B28BF5F6DD76 (person_id), add constraint FKFA09B28BF5F6DD76 foreign key (person_id) references tb_person2 (id)
+Hibernate: alter table tb_sailor add index FK5E6B0C85CCC1C106 (ship_id), add constraint FK5E6B0C85CCC1C106 foreign key (ship_id) references tb_ship (id)
+Hibernate: alter table tb_ship add index FKA4FE596D1A6E4F76 (captain_id), add constraint FKA4FE596D1A6E4F76 foreign key (captain_id) references tb_sailor (id)
+Hibernate: alter table tb_student add index FK9007E96A12A9304E (class_id), add constraint FK9007E96A12A9304E foreign key (class_id) references tb_class (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D63A8E7686 (post_id), add constraint FKD39AC0D63A8E7686 foreign key (post_id) references tb_post (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D6CE1D812E (tag_id), add constraint FKD39AC0D6CE1D812E foreign key (tag_id) references tb_tag (id)
+Hibernate: schema export complete
+Hibernate: Running hbm2ddl schema export
+Hibernate: import file not found: /import.sql
+Hibernate: exporting generated schema to database
+Hibernate: alter table tb_article drop foreign key FKD46234251F08B846
+Hibernate: alter table tb_cat drop foreign key FKCB83D685DDF909A1
+Hibernate: alter table tb_email drop foreign key FKFA09B28BF5F6DD76
+Hibernate: alter table tb_sailor drop foreign key FK5E6B0C85CCC1C106
+Hibernate: alter table tb_ship drop foreign key FKA4FE596D1A6E4F76
+Hibernate: alter table tb_student drop foreign key FK9007E96A12A9304E
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D63A8E7686
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D6CE1D812E
+Hibernate: drop table if exists tb_address
+Hibernate: drop table if exists tb_article
+Hibernate: drop table if exists tb_cat
+Hibernate: drop table if exists tb_class
+Hibernate: drop table if exists tb_customer
+Hibernate: drop table if exists tb_email
+Hibernate: drop table if exists tb_person2
+Hibernate: drop table if exists tb_post
+Hibernate: drop table if exists tb_sailor
+Hibernate: drop table if exists tb_ship
+Hibernate: drop table if exists tb_student
+Hibernate: drop table if exists tb_tag
+Hibernate: drop table if exists tb_tag_post
+Hibernate: drop table if exists tb_type
+Hibernate: create table tb_address (id integer not null, address varchar(255), zip varchar(255), telephone varchar(255), primary key (id))
+Hibernate: create table tb_article (id integer not null auto_increment, name varchar(255), content longtext, type_id integer, primary key (id))
+Hibernate: create table tb_cat (id integer not null auto_increment, name varchar(255), description varchar(255), createDate datetime, mother_id integer, primary key (id))
+Hibernate: create table tb_class (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_customer (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_email (id integer not null auto_increment, email varchar(255), person_id integer, primary key (id))
+Hibernate: create table tb_person2 (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_post (id integer not null auto_increment, title varchar(255), content text, primary key (id))
+Hibernate: create table tb_sailor (id integer not null auto_increment, name varchar(255), ship_id integer, primary key (id))
+Hibernate: create table tb_ship (id integer not null auto_increment, name varchar(255), captain_id integer unique, primary key (id))
+Hibernate: create table tb_student (id integer not null auto_increment, name varchar(255), sex varchar(255), class_id integer, primary key (id))
+Hibernate: create table tb_tag (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_tag_post (post_id integer not null, tag_id integer not null, primary key (post_id, tag_id))
+Hibernate: create table tb_type (id integer not null auto_increment, name varchar(255) unique, primary key (id))
+Hibernate: alter table tb_article add index FKD46234251F08B846 (type_id), add constraint FKD46234251F08B846 foreign key (type_id) references tb_type (id)
+Hibernate: alter table tb_cat add index FKCB83D685DDF909A1 (mother_id), add constraint FKCB83D685DDF909A1 foreign key (mother_id) references tb_cat (id)
+Hibernate: alter table tb_email add index FKFA09B28BF5F6DD76 (person_id), add constraint FKFA09B28BF5F6DD76 foreign key (person_id) references tb_person2 (id)
+Hibernate: alter table tb_sailor add index FK5E6B0C85CCC1C106 (ship_id), add constraint FK5E6B0C85CCC1C106 foreign key (ship_id) references tb_ship (id)
+Hibernate: alter table tb_ship add index FKA4FE596D1A6E4F76 (captain_id), add constraint FKA4FE596D1A6E4F76 foreign key (captain_id) references tb_sailor (id)
+Hibernate: alter table tb_student add index FK9007E96A12A9304E (class_id), add constraint FK9007E96A12A9304E foreign key (class_id) references tb_class (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D63A8E7686 (post_id), add constraint FKD39AC0D63A8E7686 foreign key (post_id) references tb_post (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D6CE1D812E (tag_id), add constraint FKD39AC0D6CE1D812E foreign key (tag_id) references tb_tag (id)
+Hibernate: schema export complete
+Hibernate: Running hbm2ddl schema export
+Hibernate: import file not found: /import.sql
+Hibernate: exporting generated schema to database
+Hibernate: alter table tb_article drop foreign key FKD46234251F08B846
+Hibernate: alter table tb_cat drop foreign key FKCB83D685DDF909A1
+Hibernate: alter table tb_email drop foreign key FKFA09B28BF5F6DD76
+Hibernate: alter table tb_sailor drop foreign key FK5E6B0C85CCC1C106
+Hibernate: alter table tb_ship drop foreign key FKA4FE596D1A6E4F76
+Hibernate: alter table tb_student drop foreign key FK9007E96A12A9304E
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D63A8E7686
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D6CE1D812E
+Hibernate: drop table if exists tb_address
+Hibernate: drop table if exists tb_article
+Hibernate: drop table if exists tb_cat
+Hibernate: drop table if exists tb_class
+Hibernate: drop table if exists tb_customer
+Hibernate: drop table if exists tb_email
+Hibernate: drop table if exists tb_person2
+Hibernate: drop table if exists tb_post
+Hibernate: drop table if exists tb_sailor
+Hibernate: drop table if exists tb_ship
+Hibernate: drop table if exists tb_student
+Hibernate: drop table if exists tb_tag
+Hibernate: drop table if exists tb_tag_post
+Hibernate: drop table if exists tb_type
+Hibernate: create table tb_address (id integer not null, address varchar(255), zip varchar(255), telephone varchar(255), primary key (id))
+Hibernate: create table tb_article (id integer not null auto_increment, name varchar(255), content longtext, type_id integer, primary key (id))
+Hibernate: create table tb_cat (id integer not null auto_increment, name varchar(255), description varchar(255), createDate datetime, mother_id integer, primary key (id))
+Hibernate: create table tb_class (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_customer (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_email (id integer not null auto_increment, email varchar(255), person_id integer, primary key (id))
+Hibernate: create table tb_person2 (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_post (id integer not null auto_increment, title varchar(255), content text, primary key (id))
+Hibernate: create table tb_sailor (id integer not null auto_increment, name varchar(255), ship_id integer, primary key (id))
+Hibernate: create table tb_ship (id integer not null auto_increment, name varchar(255), captain_id integer unique, primary key (id))
+Hibernate: create table tb_student (id integer not null auto_increment, name varchar(255), sex varchar(255), class_id integer, primary key (id))
+Hibernate: create table tb_tag (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_tag_post (post_id integer not null, tag_id integer not null, primary key (post_id, tag_id))
+Hibernate: create table tb_type (id integer not null auto_increment, name varchar(255) unique, primary key (id))
+Hibernate: alter table tb_article add index FKD46234251F08B846 (type_id), add constraint FKD46234251F08B846 foreign key (type_id) references tb_type (id)
+Hibernate: alter table tb_cat add index FKCB83D685DDF909A1 (mother_id), add constraint FKCB83D685DDF909A1 foreign key (mother_id) references tb_cat (id)
+Hibernate: alter table tb_email add index FKFA09B28BF5F6DD76 (person_id), add constraint FKFA09B28BF5F6DD76 foreign key (person_id) references tb_person2 (id)
+Hibernate: alter table tb_sailor add index FK5E6B0C85CCC1C106 (ship_id), add constraint FK5E6B0C85CCC1C106 foreign key (ship_id) references tb_ship (id)
+Hibernate: alter table tb_ship add index FKA4FE596D1A6E4F76 (captain_id), add constraint FKA4FE596D1A6E4F76 foreign key (captain_id) references tb_sailor (id)
+Hibernate: alter table tb_student add index FK9007E96A12A9304E (class_id), add constraint FK9007E96A12A9304E foreign key (class_id) references tb_class (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D63A8E7686 (post_id), add constraint FKD39AC0D63A8E7686 foreign key (post_id) references tb_post (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D6CE1D812E (tag_id), add constraint FKD39AC0D6CE1D812E foreign key (tag_id) references tb_tag (id)
+Hibernate: schema export complete
+Hibernate: Running hbm2ddl schema export
+Hibernate: import file not found: /import.sql
+Hibernate: exporting generated schema to database
+Hibernate: alter table tb_article drop foreign key FKD46234251F08B846
+Hibernate: alter table tb_cat drop foreign key FKCB83D685DDF909A1
+Hibernate: alter table tb_email drop foreign key FKFA09B28BF5F6DD76
+Hibernate: alter table tb_sailor drop foreign key FK5E6B0C85CCC1C106
+Hibernate: alter table tb_ship drop foreign key FKA4FE596D1A6E4F76
+Hibernate: alter table tb_student drop foreign key FK9007E96A12A9304E
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D63A8E7686
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D6CE1D812E
+Hibernate: drop table if exists tb_address
+Hibernate: drop table if exists tb_article
+Hibernate: drop table if exists tb_cat
+Hibernate: drop table if exists tb_class
+Hibernate: drop table if exists tb_customer
+Hibernate: drop table if exists tb_email
+Hibernate: drop table if exists tb_person2
+Hibernate: drop table if exists tb_post
+Hibernate: drop table if exists tb_sailor
+Hibernate: drop table if exists tb_ship
+Hibernate: drop table if exists tb_student
+Hibernate: drop table if exists tb_tag
+Hibernate: drop table if exists tb_tag_post
+Hibernate: drop table if exists tb_type
+Hibernate: create table tb_address (id integer not null, address varchar(255), zip varchar(255), telephone varchar(255), primary key (id))
+Hibernate: create table tb_article (id integer not null auto_increment, name varchar(255), content longtext, type_id integer, primary key (id))
+Hibernate: create table tb_cat (id integer not null auto_increment, name varchar(255), description varchar(255), createDate datetime, mother_id integer, primary key (id))
+Hibernate: create table tb_class (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_customer (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_email (id integer not null auto_increment, email varchar(255), person_id integer, primary key (id))
+Hibernate: create table tb_person2 (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_post (id integer not null auto_increment, title varchar(255), content text, primary key (id))
+Hibernate: create table tb_sailor (id integer not null auto_increment, name varchar(255), ship_id integer, primary key (id))
+Hibernate: create table tb_ship (id integer not null auto_increment, name varchar(255), captain_id integer unique, primary key (id))
+Hibernate: create table tb_student (id integer not null auto_increment, name varchar(255), sex varchar(255), class_id integer, primary key (id))
+Hibernate: create table tb_tag (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_tag_post (post_id integer not null, tag_id integer not null, primary key (post_id, tag_id))
+Hibernate: create table tb_type (id integer not null auto_increment, name varchar(255) unique, primary key (id))
+Hibernate: alter table tb_article add index FKD46234251F08B846 (type_id), add constraint FKD46234251F08B846 foreign key (type_id) references tb_type (id)
+Hibernate: alter table tb_cat add index FKCB83D685DDF909A1 (mother_id), add constraint FKCB83D685DDF909A1 foreign key (mother_id) references tb_cat (id)
+Hibernate: alter table tb_email add index FKFA09B28BF5F6DD76 (person_id), add constraint FKFA09B28BF5F6DD76 foreign key (person_id) references tb_person2 (id)
+Hibernate: alter table tb_sailor add index FK5E6B0C85CCC1C106 (ship_id), add constraint FK5E6B0C85CCC1C106 foreign key (ship_id) references tb_ship (id)
+Hibernate: alter table tb_ship add index FKA4FE596D1A6E4F76 (captain_id), add constraint FKA4FE596D1A6E4F76 foreign key (captain_id) references tb_sailor (id)
+Hibernate: alter table tb_student add index FK9007E96A12A9304E (class_id), add constraint FK9007E96A12A9304E foreign key (class_id) references tb_class (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D63A8E7686 (post_id), add constraint FKD39AC0D63A8E7686 foreign key (post_id) references tb_post (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D6CE1D812E (tag_id), add constraint FKD39AC0D6CE1D812E foreign key (tag_id) references tb_tag (id)
+Hibernate: schema export complete
+Hibernate: Running hbm2ddl schema export
+Hibernate: import file not found: /import.sql
+Hibernate: exporting generated schema to database
+Hibernate: alter table tb_article drop foreign key FKD46234251F08B846
+Hibernate: alter table tb_cat drop foreign key FKCB83D685DDF909A1
+Hibernate: alter table tb_email drop foreign key FKFA09B28BF5F6DD76
+Hibernate: alter table tb_sailor drop foreign key FK5E6B0C85CCC1C106
+Hibernate: alter table tb_ship drop foreign key FKA4FE596D1A6E4F76
+Hibernate: alter table tb_student drop foreign key FK9007E96A12A9304E
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D63A8E7686
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D6CE1D812E
+Hibernate: drop table if exists tb_address
+Hibernate: drop table if exists tb_article
+Hibernate: drop table if exists tb_cat
+Hibernate: drop table if exists tb_class
+Hibernate: drop table if exists tb_customer
+Hibernate: drop table if exists tb_email
+Hibernate: drop table if exists tb_person2
+Hibernate: drop table if exists tb_post
+Hibernate: drop table if exists tb_sailor
+Hibernate: drop table if exists tb_ship
+Hibernate: drop table if exists tb_student
+Hibernate: drop table if exists tb_tag
+Hibernate: drop table if exists tb_tag_post
+Hibernate: drop table if exists tb_type
+Hibernate: create table tb_address (id integer not null, address varchar(255), zip varchar(255), telephone varchar(255), primary key (id))
+Hibernate: create table tb_article (id integer not null auto_increment, name varchar(255), content longtext, type_id integer, primary key (id))
+Hibernate: create table tb_cat (id integer not null auto_increment, name varchar(255), description varchar(255), createDate datetime, mother_id integer, primary key (id))
+Hibernate: create table tb_class (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_customer (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_email (id integer not null auto_increment, email varchar(255), person_id integer, primary key (id))
+Hibernate: create table tb_person2 (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_post (id integer not null auto_increment, title varchar(255), content text, primary key (id))
+Hibernate: create table tb_sailor (id integer not null auto_increment, name varchar(255), ship_id integer, primary key (id))
+Hibernate: create table tb_ship (id integer not null auto_increment, name varchar(255), captain_id integer unique, primary key (id))
+Hibernate: create table tb_student (id integer not null auto_increment, name varchar(255), sex varchar(255), class_id integer, primary key (id))
+Hibernate: create table tb_tag (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_tag_post (post_id integer not null, tag_id integer not null, primary key (post_id, tag_id))
+Hibernate: create table tb_type (id integer not null auto_increment, name varchar(255) unique, primary key (id))
+Hibernate: alter table tb_article add index FKD46234251F08B846 (type_id), add constraint FKD46234251F08B846 foreign key (type_id) references tb_type (id)
+Hibernate: alter table tb_cat add index FKCB83D685DDF909A1 (mother_id), add constraint FKCB83D685DDF909A1 foreign key (mother_id) references tb_cat (id)
+Hibernate: alter table tb_email add index FKFA09B28BF5F6DD76 (person_id), add constraint FKFA09B28BF5F6DD76 foreign key (person_id) references tb_person2 (id)
+Hibernate: alter table tb_sailor add index FK5E6B0C85CCC1C106 (ship_id), add constraint FK5E6B0C85CCC1C106 foreign key (ship_id) references tb_ship (id)
+Hibernate: alter table tb_ship add index FKA4FE596D1A6E4F76 (captain_id), add constraint FKA4FE596D1A6E4F76 foreign key (captain_id) references tb_sailor (id)
+Hibernate: alter table tb_student add index FK9007E96A12A9304E (class_id), add constraint FK9007E96A12A9304E foreign key (class_id) references tb_class (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D63A8E7686 (post_id), add constraint FKD39AC0D63A8E7686 foreign key (post_id) references tb_post (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D6CE1D812E (tag_id), add constraint FKD39AC0D6CE1D812E foreign key (tag_id) references tb_tag (id)
+Hibernate: schema export complete
+Hibernate: Running hbm2ddl schema export
+Hibernate: import file not found: /import.sql
+Hibernate: exporting generated schema to database
+Hibernate: alter table tb_article drop foreign key FKD46234251F08B846
+Hibernate: alter table tb_cat drop foreign key FKCB83D685DDF909A1
+Hibernate: alter table tb_email drop foreign key FKFA09B28BF5F6DD76
+Hibernate: alter table tb_sailor drop foreign key FK5E6B0C85CCC1C106
+Hibernate: alter table tb_ship drop foreign key FKA4FE596D1A6E4F76
+Hibernate: alter table tb_student drop foreign key FK9007E96A12A9304E
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D63A8E7686
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D6CE1D812E
+Hibernate: drop table if exists tb_address
+Hibernate: drop table if exists tb_article
+Hibernate: drop table if exists tb_cat
+Hibernate: drop table if exists tb_class
+Hibernate: drop table if exists tb_customer
+Hibernate: drop table if exists tb_email
+Hibernate: drop table if exists tb_person2
+Hibernate: drop table if exists tb_post
+Hibernate: drop table if exists tb_sailor
+Hibernate: drop table if exists tb_ship
+Hibernate: drop table if exists tb_student
+Hibernate: drop table if exists tb_tag
+Hibernate: drop table if exists tb_tag_post
+Hibernate: drop table if exists tb_type
+Hibernate: create table tb_address (id integer not null, address varchar(255), zip varchar(255), telephone varchar(255), primary key (id))
+Hibernate: create table tb_article (id integer not null auto_increment, name varchar(255), content longtext, type_id integer, primary key (id))
+Hibernate: create table tb_cat (id integer not null auto_increment, name varchar(255), description varchar(255), createDate datetime, mother_id integer, primary key (id))
+Hibernate: create table tb_class (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_customer (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_email (id integer not null auto_increment, email varchar(255), person_id integer, primary key (id))
+Hibernate: create table tb_person2 (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_post (id integer not null auto_increment, title varchar(255), content text, primary key (id))
+Hibernate: create table tb_sailor (id integer not null auto_increment, name varchar(255), ship_id integer, primary key (id))
+Hibernate: create table tb_ship (id integer not null auto_increment, name varchar(255), captain_id integer unique, primary key (id))
+Hibernate: create table tb_student (id integer not null auto_increment, name varchar(255), sex varchar(255), class_id integer, primary key (id))
+Hibernate: create table tb_tag (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_tag_post (post_id integer not null, tag_id integer not null, primary key (post_id, tag_id))
+Hibernate: create table tb_type (id integer not null auto_increment, name varchar(255) unique, primary key (id))
+Hibernate: alter table tb_article add index FKD46234251F08B846 (type_id), add constraint FKD46234251F08B846 foreign key (type_id) references tb_type (id)
+Hibernate: alter table tb_cat add index FKCB83D685DDF909A1 (mother_id), add constraint FKCB83D685DDF909A1 foreign key (mother_id) references tb_cat (id)
+Hibernate: alter table tb_email add index FKFA09B28BF5F6DD76 (person_id), add constraint FKFA09B28BF5F6DD76 foreign key (person_id) references tb_person2 (id)
+Hibernate: alter table tb_sailor add index FK5E6B0C85CCC1C106 (ship_id), add constraint FK5E6B0C85CCC1C106 foreign key (ship_id) references tb_ship (id)
+Hibernate: alter table tb_ship add index FKA4FE596D1A6E4F76 (captain_id), add constraint FKA4FE596D1A6E4F76 foreign key (captain_id) references tb_sailor (id)
+Hibernate: alter table tb_student add index FK9007E96A12A9304E (class_id), add constraint FK9007E96A12A9304E foreign key (class_id) references tb_class (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D63A8E7686 (post_id), add constraint FKD39AC0D63A8E7686 foreign key (post_id) references tb_post (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D6CE1D812E (tag_id), add constraint FKD39AC0D6CE1D812E foreign key (tag_id) references tb_tag (id)
+Hibernate: schema export complete
+Hibernate: Running hbm2ddl schema export
+Hibernate: import file not found: /import.sql
+Hibernate: exporting generated schema to database
+Hibernate: alter table tb_article drop foreign key FKD46234251F08B846
+Hibernate: alter table tb_cat drop foreign key FKCB83D685DDF909A1
+Hibernate: alter table tb_email drop foreign key FKFA09B28BF5F6DD76
+Hibernate: alter table tb_sailor drop foreign key FK5E6B0C85CCC1C106
+Hibernate: alter table tb_ship drop foreign key FKA4FE596D1A6E4F76
+Hibernate: alter table tb_student drop foreign key FK9007E96A12A9304E
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D63A8E7686
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D6CE1D812E
+Hibernate: drop table if exists tb_address
+Hibernate: drop table if exists tb_article
+Hibernate: drop table if exists tb_cat
+Hibernate: drop table if exists tb_class
+Hibernate: drop table if exists tb_customer
+Hibernate: drop table if exists tb_email
+Hibernate: drop table if exists tb_person2
+Hibernate: drop table if exists tb_post
+Hibernate: drop table if exists tb_sailor
+Hibernate: drop table if exists tb_ship
+Hibernate: drop table if exists tb_student
+Hibernate: drop table if exists tb_tag
+Hibernate: drop table if exists tb_tag_post
+Hibernate: drop table if exists tb_type
+Hibernate: create table tb_address (id integer not null, address varchar(255), zip varchar(255), telephone varchar(255), primary key (id))
+Hibernate: create table tb_article (id integer not null auto_increment, name varchar(255), content longtext, type_id integer, primary key (id))
+Hibernate: create table tb_cat (id integer not null auto_increment, name varchar(255), description varchar(255), createDate datetime, mother_id integer, primary key (id))
+Hibernate: create table tb_class (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_customer (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_email (id integer not null auto_increment, email varchar(255), person_id integer, primary key (id))
+Hibernate: create table tb_person2 (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_post (id integer not null auto_increment, title varchar(255), content text, primary key (id))
+Hibernate: create table tb_sailor (id integer not null auto_increment, name varchar(255), ship_id integer, primary key (id))
+Hibernate: create table tb_ship (id integer not null auto_increment, name varchar(255), captain_id integer unique, primary key (id))
+Hibernate: create table tb_student (id integer not null auto_increment, name varchar(255), sex varchar(255), class_id integer, primary key (id))
+Hibernate: create table tb_tag (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_tag_post (post_id integer not null, tag_id integer not null, primary key (post_id, tag_id))
+Hibernate: create table tb_type (id integer not null auto_increment, name varchar(255) unique, primary key (id))
+Hibernate: alter table tb_article add index FKD46234251F08B846 (type_id), add constraint FKD46234251F08B846 foreign key (type_id) references tb_type (id)
+Hibernate: alter table tb_cat add index FKCB83D685DDF909A1 (mother_id), add constraint FKCB83D685DDF909A1 foreign key (mother_id) references tb_cat (id)
+Hibernate: alter table tb_email add index FKFA09B28BF5F6DD76 (person_id), add constraint FKFA09B28BF5F6DD76 foreign key (person_id) references tb_person2 (id)
+Hibernate: alter table tb_sailor add index FK5E6B0C85CCC1C106 (ship_id), add constraint FK5E6B0C85CCC1C106 foreign key (ship_id) references tb_ship (id)
+Hibernate: alter table tb_ship add index FKA4FE596D1A6E4F76 (captain_id), add constraint FKA4FE596D1A6E4F76 foreign key (captain_id) references tb_sailor (id)
+Hibernate: alter table tb_student add index FK9007E96A12A9304E (class_id), add constraint FK9007E96A12A9304E foreign key (class_id) references tb_class (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D63A8E7686 (post_id), add constraint FKD39AC0D63A8E7686 foreign key (post_id) references tb_post (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D6CE1D812E (tag_id), add constraint FKD39AC0D6CE1D812E foreign key (tag_id) references tb_tag (id)
+Hibernate: schema export complete
+Hibernate: Running hbm2ddl schema export
+Hibernate: import file not found: /import.sql
+Hibernate: exporting generated schema to database
+Hibernate: alter table tb_article drop foreign key FKD46234251F08B846
+Hibernate: alter table tb_cat drop foreign key FKCB83D685DDF909A1
+Hibernate: alter table tb_email drop foreign key FKFA09B28BF5F6DD76
+Hibernate: alter table tb_sailor drop foreign key FK5E6B0C85CCC1C106
+Hibernate: alter table tb_ship drop foreign key FKA4FE596D1A6E4F76
+Hibernate: alter table tb_student drop foreign key FK9007E96A12A9304E
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D63A8E7686
+Hibernate: alter table tb_tag_post drop foreign key FKD39AC0D6CE1D812E
+Hibernate: drop table if exists tb_address
+Hibernate: drop table if exists tb_article
+Hibernate: drop table if exists tb_cat
+Hibernate: drop table if exists tb_class
+Hibernate: drop table if exists tb_customer
+Hibernate: drop table if exists tb_email
+Hibernate: drop table if exists tb_person2
+Hibernate: drop table if exists tb_post
+Hibernate: drop table if exists tb_sailor
+Hibernate: drop table if exists tb_ship
+Hibernate: drop table if exists tb_student
+Hibernate: drop table if exists tb_tag
+Hibernate: drop table if exists tb_tag_post
+Hibernate: drop table if exists tb_type
+Hibernate: create table tb_address (id integer not null, address varchar(255), zip varchar(255), telephone varchar(255), primary key (id))
+Hibernate: create table tb_article (id integer not null auto_increment, name varchar(255), content longtext, type_id integer, primary key (id))
+Hibernate: create table tb_cat (id integer not null auto_increment, name varchar(255), description varchar(255), createDate datetime, mother_id integer, primary key (id))
+Hibernate: create table tb_class (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_customer (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_email (id integer not null auto_increment, email varchar(255), person_id integer, primary key (id))
+Hibernate: create table tb_person2 (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_post (id integer not null auto_increment, title varchar(255), content text, primary key (id))
+Hibernate: create table tb_sailor (id integer not null auto_increment, name varchar(255), ship_id integer, primary key (id))
+Hibernate: create table tb_ship (id integer not null auto_increment, name varchar(255), captain_id integer unique, primary key (id))
+Hibernate: create table tb_student (id integer not null auto_increment, name varchar(255), sex varchar(255), class_id integer, primary key (id))
+Hibernate: create table tb_tag (id integer not null auto_increment, name varchar(255), primary key (id))
+Hibernate: create table tb_tag_post (post_id integer not null, tag_id integer not null, primary key (post_id, tag_id))
+Hibernate: create table tb_type (id integer not null auto_increment, name varchar(255) unique, primary key (id))
+Hibernate: alter table tb_article add index FKD46234251F08B846 (type_id), add constraint FKD46234251F08B846 foreign key (type_id) references tb_type (id)
+Hibernate: alter table tb_cat add index FKCB83D685DDF909A1 (mother_id), add constraint FKCB83D685DDF909A1 foreign key (mother_id) references tb_cat (id)
+Hibernate: alter table tb_email add index FKFA09B28BF5F6DD76 (person_id), add constraint FKFA09B28BF5F6DD76 foreign key (person_id) references tb_person2 (id)
+Hibernate: alter table tb_sailor add index FK5E6B0C85CCC1C106 (ship_id), add constraint FK5E6B0C85CCC1C106 foreign key (ship_id) references tb_ship (id)
+Hibernate: alter table tb_ship add index FKA4FE596D1A6E4F76 (captain_id), add constraint FKA4FE596D1A6E4F76 foreign key (captain_id) references tb_sailor (id)
+Hibernate: alter table tb_student add index FK9007E96A12A9304E (class_id), add constraint FK9007E96A12A9304E foreign key (class_id) references tb_class (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D63A8E7686 (post_id), add constraint FKD39AC0D63A8E7686 foreign key (post_id) references tb_post (id)
+Hibernate: alter table tb_tag_post add index FKD39AC0D6CE1D812E (tag_id), add constraint FKD39AC0D6CE1D812E foreign key (tag_id) references tb_tag (id)
+Hibernate: schema export complete
