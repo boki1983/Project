@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>$.contains()</title>
+    <script type="text/javascript" src="../scripts/jquery-1.4.js"></script>
+    <script type="text/javascript" src="../scripts/jqia2.support.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        say('document contains body?');
+        say($.contains( document.documentElement, document.body )); // true
+        say('body contains document?');
+        say($.contains( document.body, document.documentElement )); // false
+        
+      });
+      
+    </script>
+  </head>
+  <body></body>
+</html>

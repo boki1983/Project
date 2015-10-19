@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>$.support Example</title>
+    <link rel="stylesheet" type="text/css" href="../styles/core.css"/>
+    <script type="text/javascript" src="../scripts/jquery-1.4.js"></script>
+    <script type="text/javascript" src="../scripts/jqia2.support.js"></script>
+    <script type="text/javascript">
+      $(function(){
+          say('feature detection');
+          say('boxModel = ' + $.support.boxModel);
+          say('cssFloat = ' + $.support.cssFloat);
+          say('hrefNormalized = ' + $.support.hrefNormalized);
+          say('htmlSerialize = ' + $.support.htmlSerialize);
+          say('leadingWhitespace = ' + $.support.leadingWhitespace);
+          say('noCloneEvent = ' + $.support.noCloneEvent);
+          say('objectAll = ' + $.support.objectAll);
+          say('opacity = ' + $.support.opacity);
+          say('scriptEval = ' + $.support.scriptEval);
+          say('style = ' + $.support.style);
+          say('tbody = ' + $.support.tbody);
+      });
+    </script>
+  </head>
+
+</html>

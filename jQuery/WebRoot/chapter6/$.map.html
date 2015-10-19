@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>$.map()</title>
+    <script type="text/javascript" src="../scripts/jquery-1.4.js"></script>
+    <script type="text/javascript" src="../scripts/jqia2.support.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        
+        function echoAry(index,value) {
+            say(value);
+        }
+        
+        // notice 肚$.grep材把计ㄧ计ㄧ计材ま计琌材ま计琌ま
+        function chkNum(value, index) {
+            //say(index + ' = ' + value);
+            var result = new Number(value);
+            return isNaN(result) ? null : result;
+        }
+      
+        var strings = ['1', '2', '3', '4', 'S', '6'];
+                                     
+        var cvtNum = $.map(strings, chkNum);
+        $.each(cvtNum, echoAry);
+        
+        // 璝callbackㄧ计肚皚玥穦ㄖ块皚い
+        var char = $.map(['this','that', 'a pig'], 
+              function(value) { return value.split('');}
+        );
+        $.each(char, echoAry);
+      });
+      
+    </script>
+  </head>
+  <body></body>
+</html>

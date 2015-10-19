@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>$.test</title>
+    <script type="text/javascript" src="../scripts/jquery-1.4.js"></script>
+    <script type="text/javascript" src="../scripts/jqia2.support.js"></script>
+    <script type="text/javascript">
+      $(function(){
+         var n=3;
+         var b=5,c=6; 
+         
+         say("eval");
+         say(eval('a' + n + '=' + b*c));
+         say("$.globalEval");
+         test();
+         say(newVar);
+         
+         function test() {
+         // Execute some JavaScript code globally.
+         $.globalEval( "var newVar = true;" );
+      }
+      });
+   
+    </script>
+  </head>
+  <body></body>
+</html>

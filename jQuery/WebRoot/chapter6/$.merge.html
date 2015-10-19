@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>$.merge()</title>
+    <script type="text/javascript" src="../scripts/jquery-1.4.js"></script>
+    <script type="text/javascript" src="../scripts/jqia2.support.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        var ary1 = ['1','2','3','4','5'];
+        var ary2 = ['6','7','8','9','10'];
+        say('array1 = ' + ary1);
+        say('array2 = ' + ary2);
+        $.merge(ary1, ary2);
+        say('after merge array1 = ' + ary1);
+        say('after merge array2 = ' + ary2);
+      });
+      
+    </script>
+  </head>
+  <body></body>
+</html>

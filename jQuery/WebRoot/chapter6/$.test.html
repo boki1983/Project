@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>$.test</title>
+    <script type="text/javascript" src="../scripts/jquery-1.4.js"></script>
+    <script type="text/javascript" src="../scripts/jqia2.support.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        var ary = [ '1', '2', '3' ];
+        var emptyObj = {}; 
+        var plainObj = new Object();
+        var obj = { name : 'boki' ,  age : '30' };
+        
+        function abc() { eval(1+1); }; 
+        
+        function eachEcho(name, value) {
+            say(name + ' = ' + value);
+        }
+        
+        say(ary + " isArray : " + $.isArray(ary));
+        say(emptyObj + " isEmptyObject : " + $.isEmptyObject(emptyObj));
+        say($.each(obj, eachEcho) + " isEmptyObject : " + $.isEmptyObject(obj));
+        say(abc + " isFunction : " + $.isFunction(abc));
+        say(plainObj + " isPlainObject : " + $.isPlainObject(plainObj));
+      });
+      
+    </script>
+  </head>
+  <body></body>
+</html>

@@ -1,0 +1,10 @@
+ClearCase CopyAreaDB|4
+SDP\Implement\Java\sdp\sdp-core\src\main\resources\META-INF\js\jqgrid
+2
+6
+3:css|2|0|0|0|9659a14e92e54a499e0e334ccf4fa921|0
+12:grid.setcolumns.js|1|1349da0af3e|1606|150e6281|ce376004bf9e47d7aacb349f2ee0e10b|0
+14:jquery.jqGrid.min.js|1|1399e8a2bc1|3d667|71afb3a7|3d598528bcb14933b76f1f4219869638|0
+e:grid.addons.js|1|1349da0af3a|6743|137e75c1|8e660309824c464097be0f5a4ff382d2|0
+4:i18n|2|0|0|0|052055a47b5a40bcad3a2ecf60071af7|0
+f:grid.postext.js|1|1349da0af37|648|e894e64e|88fc8ecdf0fe4d40bacef1055c01eb83|0

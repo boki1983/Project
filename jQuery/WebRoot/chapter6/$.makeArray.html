@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  div { color:red; }
+  </style>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+  <div>First</div>
+  <div>Second</div>
+  <div>Third</div>
+ 
+  <div>Fourth</div>
+<script>
+    var elems = document.getElementsByTagName("div"); // returns a nodeList
+    var arr = $ .makeArray(elems);
+    arr.reverse(); // use an Array method on list of dom elements
+    $(arr).appendTo(document.body);
+</script>
+ 
+</body>
+</html>

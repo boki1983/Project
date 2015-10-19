@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>jQuery Events Example</title>
+    <link rel="stylesheet" type="text/css" href="../styles/core.css"/>
+    <script type="text/javascript" src="../scripts/jquery-1.4.js"></script>
+    <script type="text/javascript" src="../scripts/jqia2.support.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        $('#example')
+          .one('click',function(event) {
+            say(event.type);
+            say('BOOM once!');
+          })
+          .one('click',function(event) {
+          say(event.type);
+            say('BOOM twice!');
+          })
+          .one('click',function(event) {
+          say(event.type);
+            say('BOOM three times!');
+          });
+          
+        $('html')
+          .one('keypress',function(event) {
+            say(event.which);
+            say('BOOM once!');
+          })
+          .one('keypress',function(event) {
+          say(event.which);
+            say('BOOM twice!');
+          })
+          .one('keypress',function(event) {
+          say(event.which);
+            say('BOOM three times!');
+          });
+      });
+      $(document).ready(function() {
+          //$('#example').triggerHandler('click');      
+      });
+    </script>
+  </head>
+
+  <body>
+    <img id="example" src="example.jpg"/>
+  </body>
+</html>

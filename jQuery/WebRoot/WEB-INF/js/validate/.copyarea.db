@@ -1,0 +1,9 @@
+ClearCase CopyAreaDB|4
+SDP\Implement\Java\sdp\sdp-core\src\main\resources\META-INF\js\validate
+2
+5
+11:custom-methods.js|1|137820a97d7|7fd|eec76795|176dbf6bf6924596a2c1a919c7fe6879|0
+12:jquery.metadata.js|1|1349da0a88d|fe6|ad30dd22|ee2e15a3c53a4fbb99b3c8d6a9fa3bd9|0
+c:localization|2|0|0|0|e7fc3608969f4d6690e1ad9fddf37669|0
+15:additional-methods.js|1|134f4a92264|37c7|88e28e11|219ae745951c44ee90efbccc7a838312|0
+16:jquery.validate.min.js|1|134f4a9228b|5557|120d60fb|0c250c7cf3374dfe964561744f752c11|0

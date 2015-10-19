@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>$.each()</title>
+    <script type="text/javascript" src="../scripts/jquery-1.4.js"></script>
+    <script type="text/javascript" src="../scripts/jqia2.support.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        function eachEcho(name, value) {
+            say(name + ' = ' + value);
+        }
+      
+        var anArray = ['one', 'two', 'three'];
+        $.each(anArray, eachEcho);
+        
+        var anObject = {one : 1, two : 2, three : 3};
+        $.each(anObject, eachEcho);
+        
+      });
+    </script>
+  </head>
+  <body></body>
+</html>

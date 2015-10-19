@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>$.parseJSON()</title>
+    <script type="text/javascript" src="../scripts/jquery-1.4.js"></script>
+    <script type="text/javascript" src="../scripts/jqia2.support.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        var obj = $.parseJSON(
+            '{"name":"John", "age":"27"}'
+        );
+        say( obj.name == "John" );
+        say( obj.name == "boki" );
+        say( obj.name );
+        say( obj.age );
+      });
+      
+    </script>
+  </head>
+  <body></body>
+</html>

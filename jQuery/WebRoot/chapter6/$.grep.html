@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>$.grep()</title>
+    <script type="text/javascript" src="../scripts/jquery-1.4.js"></script>
+    <script type="text/javascript" src="../scripts/jqia2.support.js"></script>
+    <script type="text/javascript">
+      $(function(){
+        
+        function echoAry(index,value) {
+            say(value);
+        }
+        
+        // notice 肚$.grep材把计ㄧ计ㄧ计材ま计琌材ま计琌ま
+        function chkZip(value, index) {
+            //say(index + ' = ' + value);
+            
+            return value.match(/^\d{5}(-\d{4})?$/) != null;
+        }
+      
+        var zipsArray = ['12345-1234', 'aaaaa.bbbb', '09876-5432', 
+                                     'mnbvc-2345', '99999-erty', '58930-4738'];
+                                     
+        var crtZip = $.grep(zipsArray, chkZip, false);
+        $.each(crtZip, echoAry);
+      });
+    </script>
+  </head>
+  <body></body>
+</html>

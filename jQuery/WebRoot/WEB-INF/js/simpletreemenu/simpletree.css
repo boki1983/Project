@@ -1,0 +1,113 @@
+.simpletree  {
+    padding-bottom:0;
+}
+
+.simpletree ul{ 
+    /*CSS for Simple Tree Menu*/
+    margin: 0;
+    padding: 0;
+}
+
+.simpletree li{ 
+    /*Style for LI elements in general (excludes an LI that contains sub lists)*/
+    list-style-type: none;
+    line-height: 160%;
+    padding: 0;
+    margin: 0 0 0 0px;
+    /*border-bottom: 1px solid #2779AA;*/
+    color: #fff;
+    background-color: #4B89C0;
+    background-image: url(list.gif);
+    background-repeat: no-repeat;
+    background-position: 4px 4px;   
+}
+.simpletree li.submenu.root{
+    background-image: url(root.gif);
+    padding-bottom: 4px;
+    cursor: default !important;
+}
+.simpletree li.submenu.open{    
+    background-image: url(open.gif);
+    padding-bottom: 4px;
+}
+.simpletree li.submenu.closed{
+    background-image: url(closed.gif);
+    padding-bottom: 0px;    
+}
+.simpletree li div.current{
+    font-weight: bold;
+}
+.simpletree li div.menu-text{
+    padding-left: 22px;
+}
+.simpletree li div.menu-text-folder{
+    padding-left: 18px;
+}
+.simpletree li a{
+    color: #fff;
+    text-decoration: none;
+}
+.simpletree li a:hover{ 
+    color: #fff;
+    text-decoration: underline; 
+}
+
+.simpletree li.submenu{
+    /* Style for LI that contains sub lists (other ULs). */
+    /*border: 1px solid #2694e8; background: #5C9CCC url(images/ui-bg_glass_50_3baae3_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #ffffff;*/
+    background: #4B89C0 url(closed.gif) no-repeat 3px 5px;
+    cursor: hand !important;
+    cursor: pointer !important;
+    padding-left: 4px;
+    padding-right: 4px;
+    padding-bottom: 4px; 
+}
+
+.simpletree li li, .simpletree li.submenu li{
+    background-color: #AED0EA;
+    /*border-bottom: none;*/ 
+    border-bottom: 1px solid #4B89C0;
+    color: #000;
+}
+
+.simpletree li li li, .simpletree li.submenu li li{
+    /*border: 1px solid #aed0ea; background: #AED0EA url(images/ui-bg_glass_80_d7ebf9_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #2779aa;*/ 
+    background: #E3F1FA url(list.gif) no-repeat 4px 4px;
+    /*border-bottom: none;*/ 
+    border-bottom: 1px solid #AED0EA;
+    color: #000;
+}
+
+.simpletree li li li li, .simpletree li.submenu li li li{
+    /*border: 1px solid #aed0ea; background: #AED0EA url(images/ui-bg_glass_80_d7ebf9_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #2779aa;*/     
+    background: #FFFFFF url(list.gif) no-repeat 4px 4px;
+    /*border-bottom: none;*/ 
+    border-bottom: 1px solid #E3F1FA;
+    color: #000;
+}
+
+.simpletree li li li li li, .simpletree li.submenu li li li li{
+    /*border: 1px solid #aed0ea; background: #AED0EA url(images/ui-bg_glass_80_d7ebf9_1x400.png) 50% 50% repeat-x; font-weight: bold; color: #2779aa;*/ 
+    background: #F0F0F0 url(list.gif) no-repeat 4px 4px;
+    /*border-bottom: none;*/ 
+    border-bottom: 1px solid #FFFFFF;
+    color: #000;
+}
+
+.simpletree li li a {
+    color: #000; 
+}
+
+.simpletree li li a:hover {
+    color: #000;
+}
+
+.simpletree li.submenu ul{ 
+    /*Style for ULs that are children of LIs (submenu) */
+    display: none; /*Hide them by default. Don't delete. */
+}
+
+.simpletree .submenu ul li{ 
+    /*Style for LIs of ULs that are children of LIs (submenu) */
+    cursor: default;
+}

@@ -1,0 +1,20 @@
+ClearCase CopyAreaDB|4
+SDP\Implement\Java\sdp\sdp-core\src\main\resources\META-INF\js\jqplot\plugins
+2
+10
+19:jqplot.barRenderer.min.js|1|1349da0a9bb|1c32|3ad544f3|bad00f86647d4553a013955e3ef6d4ef|0
+20:jqplot.canvasTextRenderer.min.js|1|1349da0a9be|402a|f498ee09|6104d53125164dad80c6082019dd0edf|0
+17:jqplot.trendline.min.js|1|1349da0a9c4|b69|5b9f0b8e|6377d12870cb423ea10c6968dff8124f|0
+19:jqplot.pieRenderer.min.js|1|1349da0a9ec|15de|525dd945|8e054d134de042c58609b84f0adc8e88|0
+19:jqplot.pointLabels.min.js|1|1349da0a9f3|e3b|c51c1177|f6e0eb3fe6234fadb47b8eab9fddb361|0
+22:jqplot.categoryAxisRenderer.min.js|1|1349da0a9f9|e89|336c3651|b7eae0a97e8a47ffbcabd932e8e9b7a6|0
+1d:jqplot.logAxisRenderer.min.js|1|1349da0a9fc|1b86|69e7d84d|5b3a818790614d33b2e26cf59c6a4a2f|0
+24:jqplot.canvasAxisTickRenderer.min.js|1|1349da0a9ff|f18|58282c9|92f94378110c4f56b2643bb936690989|0
+14:jqplot.cursor.min.js|1|1349da0aa07|3a00|4e512b20|5a226db2e7fc4d198fb795101e28ac0d|0
+19:jqplot.highlighter.min.js|1|1349da0aa0a|1830|1ab8cf6a|35a35242871448489e55d90806a80f50|0
+1a:jqplot.ohlcRenderer.min.js|1|1349da0aa0e|117a|f6883a6d|8cad4c872dc94f83ba96ffde8995afc2|0
+25:jqplot.canvasAxisLabelRenderer.min.js|1|1349da0aa16|d9d|4992ef61|271e4ce969874c268eab8644c44dc193|0
+1e:jqplot.dateAxisRenderer.min.js|1|1349da0aa1a|11e3|682d7034|ef9300aca18c4b9f9dca646bc077ba21|0
+1f:jqplot.mekkoAxisRenderer.min.js|1|1349da0aaa9|266a|7ef4de1f|aee15ac5f0374a55a6f94ade69188b55|0
+1b:jqplot.mekkoRenderer.min.js|1|1349da0aab0|19e3|e0f75eeb|8ae6df7851f748269d158dd83034ccd0|0
+16:jqplot.dragable.min.js|1|1349da0aaac|114c|c7c34886|bd9b7ddea29e4f91abada1df1f18cf9b|0
