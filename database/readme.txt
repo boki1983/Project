@@ -1,0 +1,1 @@
+This project teach how to use apache derby database.
