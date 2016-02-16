@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="none">
+  <test name="Test">
+    <classes>
+      <class name="TestEmployeeDetails.TestEmployeeDetails"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
+
+<suite name="Suite1">
+  <test name="test1">
+    <classes>
+       <class name="TestOrder.TestngAnnotation"/>
+    </classes>
+  </test>
+</suite>
+
+<suite name="Suite2">
+
+  <test name="exampletest1">
+    <classes>
+       <class name="TestSuit.Test1" />
+    </classes>
+  </test>
+  
+  <test name="exampletest2">
+    <classes>
+       <class name="TestSuit.Test2" />
+    </classes>
+  </test>
+</suite> 
+
+<suite name="SuiteIgnore">
+  <test name="test1">
+    <classes>
+       <class name="TestIgnore.IgnoreTest" />
+    </classes>
+  </test>
+ </suite>	 
+ 
+ <suite name="SuiteGroup">
+   <test name="test1">
+   
+   <groups>
+      <run>
+      <include name="functest" />
+      </run>
+   </groups>
+
+   <classes>
+      <class name="TestGroup.GroupTestExample" />
+   </classes>
+   
+   </test>
+</suite>
+
+<suite name="SuiteException">
+   <test name="test1">
+      <classes>
+         <class name="TestException.ExpectedExceptionTest" />
+      </classes>
+   </test>
+</suite>	
+
+<suite name="SuiteDep">
+   <test name="test1">
+      <classes>
+         <class name="TestDependency.DependencyTestUsingAnnotation" />
+      </classes>
+   </test>
+</suite>
+
+<suite name="SuiteParam">
+   <test name="test1">
+      <classes>
+         <class name="TestParam.ParamTestWithDataProvider1" />
+      </classes>
+   </test>
+</suite>

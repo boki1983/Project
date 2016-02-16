@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="5" passed="5">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="39" started-at="2016-02-16T15:49:51Z" finished-at="2016-02-16T15:49:51Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="39" started-at="2016-02-16T15:49:51Z" finished-at="2016-02-16T15:49:51Z">
+      <class name="TestParam.ParamTestWithDataProvider1">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:TestParam.ParamTestWithDataProvider1@71e7a66b]" name="initialize" is-config="true" duration-ms="4" started-at="2016-02-16T23:49:51Z" finished-at="2016-02-16T23:49:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="testPrimeNumberChecker(java.lang.Integer, java.lang.Boolean)[pri:0, instance:TestParam.ParamTestWithDataProvider1@71e7a66b]" name="testPrimeNumberChecker" duration-ms="7" started-at="2016-02-16T23:49:51Z" data-provider="test1" finished-at="2016-02-16T23:49:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPrimeNumberChecker -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:TestParam.ParamTestWithDataProvider1@71e7a66b]" name="initialize" is-config="true" duration-ms="0" started-at="2016-02-16T23:49:51Z" finished-at="2016-02-16T23:49:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="testPrimeNumberChecker(java.lang.Integer, java.lang.Boolean)[pri:0, instance:TestParam.ParamTestWithDataProvider1@71e7a66b]" name="testPrimeNumberChecker" duration-ms="1" started-at="2016-02-16T23:49:51Z" data-provider="test1" finished-at="2016-02-16T23:49:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[6]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPrimeNumberChecker -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:TestParam.ParamTestWithDataProvider1@71e7a66b]" name="initialize" is-config="true" duration-ms="1" started-at="2016-02-16T23:49:51Z" finished-at="2016-02-16T23:49:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="testPrimeNumberChecker(java.lang.Integer, java.lang.Boolean)[pri:0, instance:TestParam.ParamTestWithDataProvider1@71e7a66b]" name="testPrimeNumberChecker" duration-ms="0" started-at="2016-02-16T23:49:51Z" data-provider="test1" finished-at="2016-02-16T23:49:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[19]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPrimeNumberChecker -->
+        <test-method status="PASS" signature="testPrimeNumberChecker(java.lang.Integer, java.lang.Boolean)[pri:0, instance:TestParam.ParamTestWithDataProvider1@71e7a66b]" name="testPrimeNumberChecker" duration-ms="1" started-at="2016-02-16T23:49:51Z" data-provider="test1" finished-at="2016-02-16T23:49:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[22]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[false]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPrimeNumberChecker -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:TestParam.ParamTestWithDataProvider1@71e7a66b]" name="initialize" is-config="true" duration-ms="0" started-at="2016-02-16T23:49:51Z" finished-at="2016-02-16T23:49:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="testPrimeNumberChecker(java.lang.Integer, java.lang.Boolean)[pri:0, instance:TestParam.ParamTestWithDataProvider1@71e7a66b]" name="testPrimeNumberChecker" duration-ms="1" started-at="2016-02-16T23:49:51Z" data-provider="test1" finished-at="2016-02-16T23:49:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[23]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[true]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testPrimeNumberChecker -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:TestParam.ParamTestWithDataProvider1@71e7a66b]" name="initialize" is-config="true" duration-ms="0" started-at="2016-02-16T23:49:51Z" finished-at="2016-02-16T23:49:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+      </class> <!-- TestParam.ParamTestWithDataProvider1 -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
